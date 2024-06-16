@@ -1,0 +1,15 @@
+<table class="table table-bordered border border-primary">
+    <caption align="top" class="bg-warning p-1 fw-bold">Danh sách dự án</caption>
+    <tr>
+        <th>ID</th>
+        <th>Ten nhân viên</th>
+        <th>Ngày sinh</th>
+        <th class="text-end p-1">Khu vực</th>
+    </tr>
+    <tr *ngFor="let nv of list_nhan_vien">
+        <td class="p-1">{{nv.id}}</td>
+        <td>{{nv.ten}}</td>
+        <td>{{nv.ngay_sinh|date:'dd/mm/yyyy'}}</td>
+        <td class="text-end p-1">{{nv.khu_vuc}}</td>
+    </tr>
+</table>
